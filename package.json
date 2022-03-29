@@ -1,5 +1,5 @@
 {
-  "name": "vite-plugin-ejs",
+  "name": "vite-plugin-ejs-engine",
   "version": "1.0.0",
   "description": "Vite plugin for supporting ejs templates",
   "files": [
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/11joselu/vite-plugin-ejs.git"
+    "url": "git+https://github.com/11joselu/vite-plugin-ejs-engine.git"
   },
   "keywords": [
     "Vite",
@@ -30,9 +30,9 @@
   "author": "Jose Cabrera <joselu11cabrera@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/11joselu/vite-plugin-ejs/issues"
+    "url": "https://github.com/11joselu/vite-plugin-ejs-engine/issues"
   },
-  "homepage": "https://github.com/11joselu/vite-plugin-ejs#readme",
+  "homepage": "https://github.com/11joselu/vite-plugin-ejs-engine#readme",
   "peerDependencies": {
     "vite": "^2.0.0"
   },

@@ -1,6 +1,6 @@
-# vite-plugin-ejs
+# vite-plugin-ejs-engine
 
-[![npm Downloads](https://img.shields.io/npm/dt/vite-plugin-ejs)](https://www.npmjs.com/package/vite-plugin-ejs)
+[![npm Downloads](https://img.shields.io/npm/dt/vite-plugin-ejs-engine)](https://www.npmjs.com/package/vite-plugin-ejs-engine)
 
 [Vite](https://github.com/vitejs/vite) plugin for [Ejs](https://ejs.co/).
 
@@ -11,18 +11,18 @@ Supports:
 ## Install
 **Yarn**
 ```
-yarn add vite-plugin-ejs -D
+yarn add vite-plugin-ejs-engine -D
 ```
 or **npm**
 ```
-npm i vite-plugin-ejs --save-dev
+npm i vite-plugin-ejs-engine --save-dev
 ```
 
 ## Usage
 ### Configuration
 Use plugin in your Vite config (`vite.config.ts`)
 ```JavaScript
-import ejs from 'vite-plugin-ejs'
+import ejs from 'vite-plugin-ejs-engine'
 
 export default {
     plugins: [
