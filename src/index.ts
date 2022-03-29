@@ -1,5 +1,3 @@
-import ejs from 'ejs';
+import { compile } from './compile';
 
-export default (html: string) => {
-  return ejs.compile(html)();
-};
+export default compile;
