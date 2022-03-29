@@ -22,7 +22,7 @@ function handleTransformHtml(
     try {
       const compiledHTML = compile({
         html,
-        filename: context.path,
+        filename: context.filename,
       });
       resolve(compiledHTML);
     } catch (error) {
