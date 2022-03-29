@@ -2,10 +2,18 @@
   "name": "vite-plugin-ejs",
   "version": "1.0.0",
   "description": "Vite plugin for supporting ejs templates",
-  "main": "index.js",
+  "files": [
+    "dist",
+    "index.d.ts",
+    "client.d.ts"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "index.d.ts",
   "scripts": {
+    "prepare": "husky install",
     "test": "vitest",
-    "prepare": "husky install"
+    "build": "tsup src/index.ts --format esm,cjs --dts"
   },
   "repository": {
     "type": "git",
