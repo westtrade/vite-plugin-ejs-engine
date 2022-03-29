@@ -4,7 +4,8 @@
   "description": "Vite plugin for supporting ejs templates",
   "main": "index.js",
   "scripts": {
-    "test": "vitest"
+    "test": "vitest",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -28,12 +29,21 @@
     "vite": "^2.0.0"
   },
   "devDependencies": {
-    "eslint": "^8.12.0",
-    "mocha": "^9.2.2",
-    "prettier": "^2.6.1",
-    "tsup": "^5.12.1",
-    "typescript": "^4.6.3",
-    "vite": "^2.8.6",
-    "vitest": "^0.8.0"
+    "@typescript-eslint/eslint-plugin": "5.17.0",
+    "@typescript-eslint/parser": "5.17.0",
+    "eslint": "8.12.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "husky": "7.0.4",
+    "lint-staged": "12.3.7",
+    "mocha": "9.2.2",
+    "prettier": "2.6.1",
+    "tsup": "5.12.1",
+    "typescript": "4.6.3",
+    "vite": "2.8.6",
+    "vitest": "0.8.0"
+  },
+  "lint-staged": {
+    "*.ts": "eslint --cache --fix"
   }
 }
