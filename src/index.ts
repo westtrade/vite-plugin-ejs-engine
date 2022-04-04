@@ -33,7 +33,11 @@ function handleTransformHtml(
 
 function handleHotUpdate(context: HmrContext): void | [] {
   const filename = path.resolve(context.file);
-  console.info(`Template file ${path.basename(filename)} has been changed. Sending full-reload.`);
-  context.server.ws.send({ type: 'full-reload' });
+
+  if (filename.endsWith('.html') || filename.endsWith('.ejs')) {
+    console.info(`Template file ${path.basename(filename)} has been changed. Sending full-reload.`);
+    context.server.ws.send({ type: 'full-reload' });
+  }
+
   return [];
 }
