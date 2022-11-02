@@ -1,4 +1,4 @@
-# vite-plugin-ejs-engine
+# @teskon/vite-plugin-ejs-engine
 
 [![npm Downloads](https://img.shields.io/npm/dt/@teskon/vite-plugin-ejs-engine)](https://www.npmjs.com/package/@teskon/vite-plugin-ejs-engine)
 
@@ -13,11 +13,11 @@ Supports:
 ## Install
 **Yarn**
 ```
-yarn add vite-plugin-ejs-engine -D
+yarn add @teskon/vite-plugin-ejs-engine -D
 ```
 or **npm**
 ```
-npm i vite-plugin-ejs-engine --save-dev
+npm i @teskon/vite-plugin-ejs-engine --save-dev
 ```
 
 ## Usage
