@@ -28,7 +28,7 @@
     "engine",
     "node"
   ],
-  "author": "Jose Cabrera <joselu11cabrera@gmail.com>",
+  "author": "Kristian Auestad <kristianaue@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Teskon/vite-plugin-ejs-engine/issues"
