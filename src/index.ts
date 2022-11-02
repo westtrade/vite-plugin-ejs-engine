@@ -2,14 +2,18 @@ import { HmrContext, IndexHtmlTransformContext, IndexHtmlTransformResult } from 
 import * as path from 'path';
 import { compile } from './compile';
 
-export default () => {
+export default (
+  options: {
+    inject?: object;
+  } = {},
+) => {
   return {
     name: 'ejs',
     enforce: 'pre',
     handleHotUpdate: handleHotUpdate,
     transformIndexHtml: {
       enforce: 'pre',
-      transform: handleTransformHtml,
+      transform: (html: string, context: IndexHtmlTransformContext) => handleTransformHtml(html, context, options),
     },
   };
 };
@@ -17,12 +21,16 @@ export default () => {
 function handleTransformHtml(
   html: string,
   context: IndexHtmlTransformContext,
+  options: {
+    inject?: object;
+  },
 ): IndexHtmlTransformResult | void | Promise<IndexHtmlTransformResult | void> {
   return new Promise((resolve, reject) => {
     try {
       const compiledHTML = compile({
         html,
         filename: context.filename,
+        options,
       });
       resolve(compiledHTML);
     } catch (error) {
