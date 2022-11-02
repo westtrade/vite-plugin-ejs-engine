@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KristianAue/vite-plugin-ejs-engine.git"
+    "url": "git+https://github.com/Teskon/vite-plugin-ejs-engine.git"
   },
   "keywords": [
     "Vite",
@@ -31,9 +31,9 @@
   "author": "Jose Cabrera <joselu11cabrera@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/KristianAue/vite-plugin-ejs-engine/issues"
+    "url": "https://github.com/Teskon/vite-plugin-ejs-engine/issues"
   },
-  "homepage": "https://github.com/KristianAue/vite-plugin-ejs-engine#readme",
+  "homepage": "https://github.com/Teskon/vite-plugin-ejs-engine#readme",
   "peerDependencies": {
     "vite": "^2.0.0 || ^3.0.0"
   },
