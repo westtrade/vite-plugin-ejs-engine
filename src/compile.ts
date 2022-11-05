@@ -1,17 +1,20 @@
-import ejs, { Options } from 'ejs';
+import ejs, { Options as EjsOptions } from 'ejs';
 
 export const compile = ({
   html,
   filename,
   options,
-}: Options & {
+}: EjsOptions & {
   html: string;
-  options: {
-    inject?: object;
+  options?: {
+    inject?: Record<string, any>;
+    ejsOptions?: EjsOptions;
   };
 }) => {
-  return ejs.compile(html, {
+  const ejsOptions = {
     filename,
     async: false,
-  })(options?.inject || {});
+    ...(options?.ejsOptions || {}),
+  };
+  return ejs.compile(html, ejsOptions)(options?.inject || {});
 };

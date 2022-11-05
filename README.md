@@ -77,6 +77,13 @@ You will then be able to use that variable in your template files as such:
 </html>
 ```
 
+Below you can see all available options that you can apply to this plugin.
+
+| property     | default       | description                                                                                                     |
+| ------------ | ------------- | --------------------------------------------------------------------------------------------------------------- |
+| `inject`     | -             | Data injected into HTML.                                                                                        |
+| `ejsOptions` | -             | `ejs` options, [@See](https://github.com/mde/ejs#options)                                                       |
+
 
 ### Example
 

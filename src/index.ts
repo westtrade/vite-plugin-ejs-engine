@@ -1,3 +1,4 @@
+import { Options as EjsOptions } from 'ejs';
 import { HmrContext, IndexHtmlTransformContext, IndexHtmlTransformResult } from 'vite';
 import * as path from 'path';
 import { compile } from './compile';
@@ -22,7 +23,8 @@ function handleTransformHtml(
   html: string,
   context: IndexHtmlTransformContext,
   options: {
-    inject?: object;
+    inject?: Record<string, any>;
+    ejsOptions?: EjsOptions;
   },
 ): IndexHtmlTransformResult | void | Promise<IndexHtmlTransformResult | void> {
   return new Promise((resolve, reject) => {
